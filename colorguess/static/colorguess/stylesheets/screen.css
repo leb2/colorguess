@@ -1,0 +1,227 @@
+/* line 5, ../sass/screen.scss */
+html body {
+  background-color: #1E1E1E;
+  color: #DDD;
+}
+
+/* line 10, ../sass/screen.scss */
+.background {
+  z-index: -3;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/* line 17, ../sass/screen.scss */
+.score-modal-container {
+  background: green;
+  margin: 0 auto;
+  width: 500px;
+  position: relative;
+}
+/* line 23, ../sass/screen.scss */
+.score-modal-container .score-modal {
+  display: none;
+  left: 0px;
+  width: 100%;
+  min-height: 500px;
+  top: 75px;
+  top: 10vh;
+  background: #DDD;
+  position: absolute;
+  border-radius: 2px;
+  text-align: center;
+  color: #333;
+  padding: 55px 45px 55px 45px;
+  font-family: "Open Sans", "Raleway", Helvetica, Arial, Sans-serif;
+}
+/* line 39, ../sass/screen.scss */
+.score-modal-container .score-modal h1 {
+  font-weight: 900;
+  border-bottom: 1px solid #999;
+  padding-bottom: 8px;
+  margin: 0px;
+}
+/* line 46, ../sass/screen.scss */
+.score-modal-container .score-modal .score-container {
+  font-size: 65px;
+  margin-top: 40px;
+  color: #444;
+}
+/* line 51, ../sass/screen.scss */
+.score-modal-container .score-modal .score-container .score {
+  font-weight: 900;
+  color: #333;
+}
+/* line 57, ../sass/screen.scss */
+.score-modal-container .score-modal .name-input {
+  margin-top: 25px;
+  width: 80%;
+  display: inline-block;
+  text-align: center;
+}
+/* line 63, ../sass/screen.scss */
+.score-modal-container .score-modal .name-input .name-label {
+  text-align: left;
+  padding-left: 8px;
+  font-weight: 900;
+  color: #444;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+/* line 73, ../sass/screen.scss */
+.score-modal-container .score-modal .name-input input {
+  width: 100%;
+  height: 40px;
+  padding: 8px;
+  border: 1px solid #999;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 20px;
+}
+/* line 83, ../sass/screen.scss */
+.score-modal-container .score-modal .name-input input.error {
+  border-color: red;
+}
+/* line 89, ../sass/screen.scss */
+.score-modal-container .score-modal button {
+  border: 1px solid #999;
+  padding: 8px 14px 8px 14px;
+  font-weight: 300;
+  font-family: "Raleway", "Open Sans", Helvetica, Arial, Sans-serif;
+  background: rgba(255, 255, 255, 0.4) !important;
+  margin-top: 50px;
+  font-size: 25px;
+  color: #333;
+  transition: background 0.5s !important;
+}
+/* line 100, ../sass/screen.scss */
+.score-modal-container .score-modal button:hover {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+/* line 106, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page {
+  text-align: center;
+}
+/* line 109, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores {
+  border-radius: 4px;
+  overflow: hidden;
+}
+/* line 113, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores .highscore {
+  padding: 0 90px 0 90px;
+  font-family: "Open Sans", "Raleway", Helvetica, Arial, Sans-serif;
+  font-weight: 14px;
+  text-transform: uppercase;
+  text-align: left;
+  position: relative;
+  min-height: 20px;
+  padding: 10px;
+}
+/* line 123, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores .highscore .highscore-name {
+  padding-right: 10px;
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+/* line 130, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores .highscore .highscore-value {
+  padding-left: 14px;
+  width: 50%;
+  display: inline;
+  text-align: left;
+}
+/* line 138, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores .highscore:nth-child(odd) {
+  background: #555;
+  color: #DDD;
+}
+/* line 142, ../sass/screen.scss */
+.score-modal-container .score-modal .highscores-page .highscores .highscore:nth-child(even) {
+  background: #BBB;
+}
+
+/* line 153, ../sass/screen.scss */
+.row.main {
+  padding-top: 22%;
+}
+/* line 159, ../sass/screen.scss */
+.row.main .guess-box {
+  z-index: 1;
+  display: inline-block;
+  position: relative;
+  color: #DDD;
+}
+/* line 165, ../sass/screen.scss */
+.row.main .guess-box input {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid #888;
+  height: 75px;
+  padding: 16px;
+  padding-left: 48px;
+  width: 150px;
+  text-transform: uppercase;
+  border-radius: 3px;
+}
+/* line 176, ../sass/screen.scss */
+.row.main .guess-box input, .row.main .guess-box .hash, .row.main .guess-box .answer {
+  font-size: 40px;
+  font-family: 'Open Sans';
+  font-weight: 300;
+}
+/* line 182, ../sass/screen.scss */
+.row.main .guess-box .hash {
+  position: absolute;
+  top: 8px;
+  left: 20px;
+}
+/* line 188, ../sass/screen.scss */
+.row.main .guess-box .answer {
+  text-transform: uppercase;
+  position: absolute;
+  top: 9px;
+  left: 50px;
+}
+/* line 194, ../sass/screen.scss */
+.row.main .guess-box .answer span {
+  padding: 0px;
+  margin: 0px;
+  color: #5E9AC4;
+}
+/* line 200, ../sass/screen.scss */
+.row.main .guess-box .answer span.lowGuess {
+  color: #B22;
+}
+/* line 203, ../sass/screen.scss */
+.row.main .guess-box .answer span.highGuess {
+  color: #2B2;
+}
+
+/* line 212, ../sass/screen.scss */
+.score-container {
+  margin-top: 18px;
+}
+
+/* line 217, ../sass/screen.scss */
+.main-button.start {
+  border-radius: 3px;
+  z-index: 40;
+  background: none;
+  border: none;
+  font-family: "Raleway", "Open Sans", Helvetica, Arial, Sans-serif;
+  font-weight: thin;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 1px solid #999;
+  margin: 15px;
+  padding: 12px 28px 12px 28px !important;
+  transition: background 0.2s;
+}
+
+/* line 231, ../sass/screen.scss */
+.main-button.start:hover {
+  background: rgba(255, 255, 255, 0.1);
+}

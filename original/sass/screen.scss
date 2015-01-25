@@ -1,0 +1,193 @@
+
+$raleway-stack: 'Raleway', 'Open Sans', Helvetica, Arial, Sans-serif;
+$opensans-stack: 'Open Sans', 'Raleway', Helvetica, Arial, Sans-serif;
+
+html body {
+	background-color: #1E1E1E;
+	color: #DDD;
+}
+
+
+.background {
+	z-index: -3;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.score-modal-container {
+	background: green;
+	margin: 0 auto;
+	width: 500px;
+	position: relative;
+
+	.score-modal {
+		display: none;
+		left: 0px;
+		width: 100%;
+		top: 75px;
+		top: 10vh;
+		background: #DDD;
+		position: absolute;
+		border-radius: 2px;
+		text-align: center;
+		color: #333;
+		padding: 55px 45px 55px 45px;
+		
+		font-family: $opensans-stack;
+
+		h1 {
+			font-weight: 900;
+			border-bottom: 1px solid #999;
+			padding-bottom: 8px;
+			margin: 0px;
+		}
+
+		.score-container {
+			font-size: 65px;
+			margin-top: 40px;
+			color: #444;
+			
+			.score {
+				font-weight: 900;
+				color: #333;
+			}
+		}
+
+		.name-input {
+			margin-top: 25px;
+			width: 80%;
+			display: inline-block;
+			text-align: center;
+
+			.name-label {
+				text-align: left;
+				padding-left: 8px;
+				font-weight: 900;
+				color: #444;
+				text-transform: uppercase;
+				font-size: 18px;
+			}
+
+
+			input {
+				width: 100%;
+				height: 40px;
+				padding: 8px;
+				border: 1px solid #999;
+				font-weight: bold;
+				text-transform: uppercase;
+				text-align: center;
+				font-size: 20px;
+			}
+
+		}
+
+		button.submit-score {
+			border: 1px solid #999;
+			padding: 8px 14px 8px 14px;
+			font-weight: 300;
+			font-family: $raleway-stack;
+			background: rgba(white, 0.4);
+			margin-top: 50px;
+			font-size: 25px;
+			color: #333;
+			transition: background 0.5s;
+		}
+		button.submit-score:hover {
+			background: rgba(black, 0.1);
+		}
+	}
+}
+
+
+
+.row.main {
+	padding-top: 22%;
+
+
+
+
+	.guess-box {
+		z-index: 1;
+		display: inline-block;
+		position: relative;
+		color: #DDD;
+
+		input {
+			background: rgba(white, 0.1);
+			border: 1px solid #888;
+			height: 75px;
+			padding: 16px;
+			padding-left: 48px;
+			width: 150px;
+			text-transform: uppercase;
+		}
+
+		input, .hash, .answer {
+			font-size: 40px;
+			font-family: 'Open Sans';
+			font-weight: 300;
+		}
+
+		.hash {
+			position: absolute;
+			top: 8px;
+			left: 20px;
+		}
+
+		.answer {
+			text-transform: uppercase;
+			position: absolute;
+			top: 9px;
+			left: 50px;
+
+			span {
+				padding: 0px;
+				margin: 0px;
+				color: #5E9AC4;
+			}
+
+			span.lowGuess {
+				color: #B22;
+			}
+			span.highGuess {
+				color: #2B2;
+			}
+		}
+	}
+}
+
+
+
+.score-container {
+	margin-top: 18px;
+}
+
+button.start {
+	z-index: 40;
+	background: none;
+	border: none;
+	font-family: $raleway-stack;
+	font-weight: thin;
+	text-transform: uppercase;
+	font-size: 20px;
+	border: 1px solid #999;
+	margin: 15px;
+	padding: 12px 28px 12px 28px !important;
+	transition: background 0.2s;
+}
+button.start:hover {
+	background: rgba(white, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
