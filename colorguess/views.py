@@ -6,9 +6,11 @@ import json
 
 
 def home(request):
+    request.META["CSRF_COOKIE_USED"] = True
     return render(request, 'colorguess/index.html')
 
 def scores(request):
+    request.META["CSRF_COOKIE_USED"] = True
     if request.method == 'POST':
         Score(name=request.POST['name'], value=request.POST['value']).save()
 
