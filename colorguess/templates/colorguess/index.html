@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load staticfiles %}
 
 <html>
 	<head>
@@ -8,7 +9,7 @@
 
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300|Raleway:400,300,800,100' rel='stylesheet' type='text/css'>
 
-		<link rel='stylesheet' type='text/css' href='static/colorguess/stylesheets/screen.css'></link>
+		<link rel='stylesheet' type='text/css' href="{% static 'colorguess/stylesheets/screen.css' %}"></link>
 		<link rel='stylesheet' type='text/css' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css'></link>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 
@@ -75,7 +76,7 @@
 		</div>
 
 
-		<script src='static/colorguess/colors.js'></script>
+		<script src="{% static 'colorguess/colors.js' %}"></script>
 	</body>
 </html>
 
