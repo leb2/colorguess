@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.core import serializers
+from django.views.decorators.csrf import csrf_exempt
 from models import *
 import json
 
@@ -9,6 +10,7 @@ def home(request):
     request.META["CSRF_COOKIE_USED"] = True
     return render(request, 'colorguess/index.html')
 
+@csrf_exempt
 def scores(request):
     request.META["CSRF_COOKIE_USED"] = True
     if request.method == 'POST':
